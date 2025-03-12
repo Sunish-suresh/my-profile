@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 0px 0px 10px rgba(225,225,225,8);
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    cursor: url(cursor.png), auto;
+    background-color: black;
+
+}
+.video_main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.video_main video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.overlay, .overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.profile_box{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.profile{
+    border-radius: 15px;
+    background-color: rgba(0, 0,0,0.2);
+    height:450px;
+    width: 650px;
+    backdrop-filter:blur(1px);
+    z-index: 3;
+    display:flexbox;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_pic_box{
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 110px;
+}
+.profile_pic{
+    padding: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: rgba(50,46,46, 0.475);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_pic img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.content{
+    display: flexbox;
+    flex-direction: column;
+}
+.content p, h1{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin: 20px 20px;
+    letter-spacing: 2px;
+}
+.discord_box{
+    height: 100px;
+    width: 300px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: inset 10px 10px 20px rgba(225, 225, 225, 0.2);
+}
+.discord_pfp{
+    padding: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 3px;
+    border-color: rgba(50, 46, 46, 0.475);
+    background-size: cover;
+    display: flex;
+    margin-left: 10px;
+}
+.discord_pfp img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.discord_content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+span{
+    font-size: 20px;
+    color: white;
+}
+span.discord_name{
+    display: flex;
+    gap: 10px;
+}
+.discord_logos{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.hypesquad{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: anchor-center;
+}
+.hypesquad span{
+    position: absolute;
+    bottom: 75%;
+    left:65%;
+    transform: translate(-50%);
+    font-size: 14px;
+    background-color: rgba(0, 0,0,0.6);
+    border-radius: 20px;
+    margin: 1px;
+    padding: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease-in-out;
+}
+.hypesquad img {
+    height: 16px;
+    width: 16px;
+}
+.hypesquad:hover span{
+    opacity: 1;
+
+
+}
+.nitro{
+    margin-top: 0.8px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: anchor-center;
+}
+.nitro span{
+    position: absolute;
+    bottom: 75%;
+    left:75%;
+    transform: translate(-50%);
+    font-size: 14px;
+    background-color: rgba(0, 0,0,0.6);
+    border-radius: 20px;
+    margin: 1px;
+    padding: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events:none ;
+    transition: opacity 0.4s ease-in-out;
+}
+.nitro:hover span{
+    opacity: 1;
+}
+.nitro img{
+    height: 19px;
+    width:19px;
+}
+.social_link{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.ytpng, .dcpng, .gitpng , .instapng{
+
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease-in-out;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 8));
+}
+.ytpng:hover , .dcpng:hover,.instapng:hover, .gitpng:hover  {
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 8));
+}
+
